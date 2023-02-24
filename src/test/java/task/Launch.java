@@ -26,14 +26,7 @@ public class Launch {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div[@class='_3OO5Xc']//input")).sendKeys("laptop");
 		
-		Thread.sleep(3000);
-//		Robot r=new Robot();
-//		for (int i = 0; i < 7; i++) {
-//			r.keyPress(KeyEvent.VK_DOWN);
-//			Thread.sleep(2000);
-//		}
-//		r.keyPress(KeyEvent.VK_ENTER);
-		
+		Thread.sleep(3000);		
 		List<WebElement> list = driver.findElements(By.xpath("//ul[@class='col-12-12 _1MRYA1 _38UFBk']//li//div//a//div[@class='lrtEPN _17d0yO']"));
 		list.get(list.size()-2).click();
 		System.out.println(list);
