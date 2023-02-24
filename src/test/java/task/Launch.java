@@ -36,7 +36,7 @@ public class Launch {
 		
 		List<WebElement> list = driver.findElements(By.xpath("//ul[@class='col-12-12 _1MRYA1 _38UFBk']//li//div//a//div[@class='lrtEPN _17d0yO']"));
 		list.get(list.size()-2).click();
-		
+		System.out.println(list);
 		
 		driver.quit();
 	}
